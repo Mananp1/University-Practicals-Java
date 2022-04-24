@@ -1,4 +1,4 @@
-/* Write a program that prompts the user to enter a letter and check whether a letter is a 
+/* Write a program that prompts the user to enter a letter and check whether a letter is a
 vowel or constant.
 */
 
@@ -10,11 +10,16 @@ public class VowelConsonant {
         System.out.println("Enter a character: ");
         char ch = input.next().charAt(0);
         char chl = Character.toLowerCase(ch);
-            if (chl == 'a' || chl == 'e' || chl == 'i' || chl == 'o' || chl == 'u') {
+        switch (chl) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
                 System.out.println(ch + " is vowel");
-            }
-            else {
+                break;
+            default:
                 System.out.println(ch + " is consonant");
-            }
+        }
     }
 }
