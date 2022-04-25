@@ -1,6 +1,6 @@
 /*Write a program that solves the following equation and displays the value x and y:
 1) 3.4x+50.2y=44.5 2) 2.1x+.55y=5.9
-(Assume Cramer’s rule to solve equation 
+(Assume Cramer’s rule to solve equation
 ax+by=e x=ed-bf/ad-bc cx+dy=f y=af-ec/ad-bc )
 */
 
@@ -29,6 +29,6 @@ public class Main
         double x = ((e*d)-(b*f))/((a*d)-(b*c));
         double y = ((a*f)-(e*c))/((a*d)-(b*c));
 
-        System.out.format("x = %1.4f y = %1.4f",x,y);
+        System.out.format("x = "+x+"y = "+y);
     }
 }
