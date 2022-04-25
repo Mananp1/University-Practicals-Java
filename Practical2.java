@@ -8,6 +8,6 @@ public class Main {
         System.out.println("Enter the amount: ");
         int rupees = convert.nextInt();
         float dollers = (float)(rupees/70.0);
-        System.out.printf("%d = %f$",rupees,dollers);
+        System.out.println("" +rupees+"= "+dollers+"$");
     }
 }
